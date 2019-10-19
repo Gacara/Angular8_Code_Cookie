@@ -1,0 +1,25 @@
+[{
+        "id": 1,
+        "code": "T54K",
+        "solution": "Le mot de passe est souvent la date d’anniversaire du propriétaire.",
+        "image": "assets/img/PC.png"
+    },
+    {
+        "id": 3,
+        "code": "H56R",
+        "solution": "Le code du coffre est : 7531",
+        "image": "assets/img/oreiller.png"
+    },
+    {
+        "id": 4,
+        "code": "B39S",
+        "solution": "Vive la liberté",
+        "image": "assets/img/Commode.png"
+    },
+    {
+        "id": 5,
+        "code": "Y20C",
+        "solution": "Ce morceau de vase est très coupant on peut s’en servir ",
+        "image": "assets/img/Vase.png"
+    }
+]

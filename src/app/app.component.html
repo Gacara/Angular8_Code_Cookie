@@ -1,0 +1,24 @@
+<div class="container-fluid d-flex flex-column">
+    <header class="d-flex flex-column justify-content-end align-items-center">
+        <img src="assets/img/logo.png" alt="Logo Wedding Nightmare">
+        <nav class="align-self-stretch pb-2">
+            <ul class="d-flex">
+                <li class="d-flex flex-fill">
+                    <a class="flex-fill text-center" routerLink="/jeu" routerLinkActive="active">JEU</a>
+                </li>
+                <li class="d-flex flex-fill">
+                    <a class="flex-fill text-center" routerLink="/histoire" routerLinkActive="active">HISTOIRE</a>
+                </li>
+                <li class="d-flex flex-fill">
+                    <a class="flex-fill text-center" routerLink="/personnages" routerLinkActive="active">PERSONNAGES</a>
+                </li>
+                <li class="d-flex flex-fill">
+                    <a class="flex-fill text-center" routerLink="/infos" routerLinkActive="active">INFOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<div [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+     <router-outlet #o="outlet"></router-outlet>
+</div>

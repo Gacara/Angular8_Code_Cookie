@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="d-flex jeu flex-column align-items-center">
+        <h2 class="text-center">ENTREZ VOTRE CODE ICI</h2>
+        <input autofocus spellcheck="false" type="text" [(ngModel)]="inputcode" (input)="searchIndice(inputcode)" (ngModelChange)="inputcode = $event.toUpperCase()" (keydown.space)="$event.preventDefault();" maxlength="4">
+        <ul class="d-flex flex-column-reverse">
+            <li [@simpleFadeAnimation]="'in'" class="d-flex flex-column align-items-center" *ngFor="let deb of debloque">
+                <p>CODE : {{deb.code}}</p> 
+                <img src="{{deb.image}}">
+                <p>Indice : {{deb.solution}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
